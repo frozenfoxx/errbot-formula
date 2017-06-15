@@ -1,0 +1,11 @@
+errbot:
+  basedir: '/opt/errbot'
+  extra_plugin_dir: 'None'
+  locale: 'en_US.UTF-8'
+  log_level:  'INFO'
+  backend:  'slack'
+  token:  'yourtokenhere'
+  admins:
+    - 'user1'
+    - 'user2'
+  fullname:  'botname'
