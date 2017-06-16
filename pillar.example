@@ -1,5 +1,6 @@
 errbot:
   basedir: '/opt/errbot'
+  datadir: '/var/lib/errbot'
   extra_plugin_dir: 'None'
   locale: 'en_US.UTF-8'
   log_level:  'INFO'
