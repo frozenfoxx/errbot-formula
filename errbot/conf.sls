@@ -40,6 +40,7 @@ errbot_service_file:
         - mode: 0644
         - context:
             conf_file: {{ base_dir }}/config.py
+            exec_file: {{ errbot.exec_file }}
             user: {{ errbot.user }}
         - require:
             - cmd: errbot_install
