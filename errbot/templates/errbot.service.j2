@@ -4,9 +4,9 @@ After=network.target
 
 [Service]
 Type=forking
-User=errbot
-Environment="CONFIGFILE={{ conffile }}"
-ExecStart=/usr/local/bin/errbot --daemon --config $CONFIGFILE
+User={{ user }}
+Environment="CONFIGFILE={{ conf_file }}"
+ExecStart={{ exec_file }} --daemon --config $CONFIGFILE
 ExecStop=/bin/kill -SIGINT $MAINPID
 Restart=on-failure
 
