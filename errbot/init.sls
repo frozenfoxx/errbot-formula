@@ -1,4 +1,6 @@
 include:
-  - .install
   - .conf
+  - .dirs
+  - .install
   - .service
+  - .users
