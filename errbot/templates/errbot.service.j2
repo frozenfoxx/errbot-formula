@@ -1,0 +1,14 @@
+[Unit]
+Description=Errbot
+After=network.target
+
+[Service]
+Type=forking
+User=errbot
+Environment="CONFIGFILE={{ conffile }}"
+ExecStart=/usr/local/bin/errbot --daemon --config $CONFIGFILE
+ExecStop=/bin/kill -SIGINT $MAINPID
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
