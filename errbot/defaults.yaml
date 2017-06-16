@@ -1,0 +1,16 @@
+# vim: sts=2 ts=2 sw=2 et ai
+#
+# SET ALL PARAMS IN CONFIG SECTION USING UNDERSCORE, NOT HYPHEN
+# so that it works correctly
+{% load_yaml as rawmap %}
+Debian:
+  exec_file: /usr/local/bin/errbot
+  service_file: /etc/systemd/system/errbot.service
+  user: errbot
+  group: errbot
+Ubuntu:
+  exec_file: /usr/local/bin/errbot
+  service_file: /etc/systemd/system/errbot.service
+  user: errbot
+  group: errbot
+{% endload %}
