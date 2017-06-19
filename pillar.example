@@ -7,6 +7,6 @@ errbot:
   backend:  'Slack'
   token:  'yourtokenhere'
   admins:
-    - 'user1'
-    - 'user2'
+    - '@user1'
+    - '@user2'
   fullname:  'botname'
