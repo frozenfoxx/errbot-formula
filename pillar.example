@@ -1,7 +1,7 @@
 errbot:
   base_dir: '/opt/errbot'
   data_dir: '/var/lib/errbot'
-  extra_plugin_dir: 'None'
+  extra_plugin_dir: '/opt/errbot/plugins'
   locale: 'en_US.UTF-8'
   log_level:  'INFO'
   backend:  'Slack'
