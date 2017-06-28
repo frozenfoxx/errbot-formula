@@ -8,6 +8,7 @@
 {% set token = salt['pillar.get']('errbot:token') %}
 {% set admins = salt['pillar.get']('errbot:admins') %}
 {% set fullname = salt['pillar.get']('errbot:fullname') %}
+{% set access_controls = salt['pillar.get']('errbot:access_controls') %}
 
 errbot_config:
     file.managed:
