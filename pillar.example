@@ -10,3 +10,5 @@ errbot:
     - '@user1'
     - '@user2'
   fullname:  'botname'
+  access_controls:
+    "somechatcommand": "{'allowusers': BOT_ADMINS}"
