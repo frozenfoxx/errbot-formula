@@ -12,3 +12,4 @@ errbot:
   fullname:  'botname'
   access_controls:
     "somechatcommand": "{'allowusers': BOT_ADMINS}"
+    "ScaryPlugin:*": "{'allowusers': BOT_ADMINS}"
