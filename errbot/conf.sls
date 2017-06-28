@@ -26,6 +26,7 @@ errbot_config:
             token: {{ token }}
             admins: {{ admins }}
             fullname: {{ fullname }}
+            access_controls: {{ access_controls }}
         - require:
             - file: errbot_dir
             - pip: errbot_package
